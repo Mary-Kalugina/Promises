@@ -6,6 +6,6 @@ test('loads game saving data', () => {
 
   return loader.load()
     .then((saving) => {
-      expect(saving).toEqual(result);
+      expect(JSON.stringify(saving)).toEqual(result);
     });
 });
